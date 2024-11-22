@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 # Charger image : 
-image = Image.open("Digits/image_ia_chiffre_6.png")
+image = Image.open("Digits/Pictures/image_ia_chiffre_6.png")
 image = image.convert("L") # Convertit en niveau de gris
 image = image.resize((28, 28)) # Redimensionne image
 image = np.array(image) # On convertit en tableau mais le blanc correspon à 255 alors que dans la base de donnée c'était des 0
